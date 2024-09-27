@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+       default-lazy-init="true">
+
+    <!-- 配置UserService-->
+    <bean id="UserServiceImpl" class="com.yt.service.impl.UserServiceImpl" init-method="init" >
+
+    </bean>
+
+    <!-- 前置处理器 -->
+    <bean id="MyBeanPostProcessor" class="com.yt.beanpostprocessor.MyBeanPostProcessor">
+
+    </bean>
+
+
+
+
+</beans>
